@@ -117,7 +117,10 @@ plugins {
 
 launch4j {
     outfile = 'TestMain.exe'
-    mainClassName = 'src.main.java.SwingDemo'
-    copyConfigurable = []
+    mainClassName = 'SwingDemo'
     //jarTask = project.tasks.shadowJar
+}
+
+dependencies {
+    implementation 'junit:junit:4.13.1'
 }
